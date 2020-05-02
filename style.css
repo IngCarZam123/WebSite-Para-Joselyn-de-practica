@@ -76,7 +76,10 @@ body{
 
 .busqueda {
     margin-left: auto;
-}
+
+} 
+
+
 
 li {
     padding: 20px;
@@ -112,6 +115,7 @@ img {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+  
 }
 
 .box > img {
@@ -127,9 +131,11 @@ img {
     align-items: center;
     align-self: center;
     background-color: #444;
-    padding: 50px;
+    padding: 20px;
     margin: 50px;
     width: 300px;
+    margin-left: 0;
+   
 }
 
 @media only screen and (max-width: 600px) {
