@@ -64,13 +64,18 @@ body{
     background: linear-gradient(top, grey 0%,#60abf8 44%,black 100%); /* W3C */
 }
 
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .main-nav {
     display: flex;
     list-style: none;
     font-size: 0.7em;
     margin: 0;
+
 }
 
 
@@ -79,6 +84,9 @@ body{
 
 } 
 
+input {
+    width: auto-fill;
+}
 
 
 li {
@@ -109,6 +117,7 @@ img {
     background-size: 100%;
 }
 
+
 /* GRID */
 
 .grid-wrapper {
@@ -127,15 +136,22 @@ img {
 .box {
 
 
-    justify-content: center;
-    align-items: center;
-    align-self: center;
+   
     background-color: #444;
     padding: 20px;
-    margin: 50px;
-    width: 300px;
-    margin-left: 0;
+    margin: 30px;
    
+    margin-left: 30px;
+   
+}
+
+img:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.4);
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -159,3 +175,6 @@ img {
     }
 }
 
+footer {
+    text-align: center;
+}
